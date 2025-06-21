@@ -1,4 +1,3 @@
-import pandas as pd
 import requests   
 from datetime import datetime
 url_endpoint = 'http://www.bankofengland.co.uk/boeapps/iadb/fromshowcolumns.asp?csv.x=yes'
@@ -9,7 +8,7 @@ print(today)
 payload = {
     'Datefrom'   : '01/Jan/2010',
     'Dateto'     :  today,
-    'SeriesCodes': 'LPMZ3TH,LPMB6S2,LPMB6S3,LPMB75C,LPMB76C,LPMVYWO,LPMZ3TT,LPMZ3TV,LPMZ3TX,LPMVWLQ,LPMVWLW,RPMB3OM',
+    'SeriesCodes': 'LPMB5S9,LPMB6S2,LPMB6S3,LPMB75C,LPMB76C,LPMVYWO,LPMZ3TT,LPMZ3TV,LPMZ3TX,LPMVWLQ,LPMVWLW,RPMB3OM',
     'CSVF'       : 'TN',
     'UsingCodes' : 'Y',
     'VPD'        : 'Y',
