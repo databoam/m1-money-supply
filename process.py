@@ -23,4 +23,13 @@ df['date'] = pd.to_datetime(df['date'], format='%d %b %Y').dt.strftime('%Y-%m-%d
 
 df['m1'] = df.iloc[:, 1:].sum(axis=1)
 
+
+df['cash_percent'] = (((df['household_cash'] + df['nfc_cash'] + df['ofc_cash']) / df['m1']) * 100).round(2)
+df['household_percent'] = (((df['household_cash'] + df['household_interest'] + df['household_non_interest']) / df['m1']) * 100).round(2)
+df['nfc_percent'] = (((df['nfc_cash'] + df['nfc_interest'] + df['nfc_non_interest']) / df['m1']) * 100).round(2)
+df['ofc_percent'] = (((df['ofc_cash'] + df['ofc_interest'] + df['ofc_non_interest']) / df['m1']) * 100).round(2)
+df['non_residents_percent'] = ((df['non_residents'] / df['m1']) * 100).round(2)
+df['government_percent'] = (((df['general_gov'] + df['public_corp'])  / df['m1']) * 100).round(2)
+
+
 df.to_csv('m1_comp_processed.csv', index=False)
