@@ -9,7 +9,7 @@ print(today)
 datatables = {'A1_1_1' : 'LPMAVAA,LPMBL22',
               'A2_2_1' : 'LPMVRJX,LPMZ597,LPMZ598,LPMVQKT,LPMVQXV,LPMVRJV,LPMVWDO,LPMAUYM,LPMVWXL',
               'A2_3' : 'LPMVWXL,LPMVWYC,LPMVWYD,LPMVWYE,LPMVWYF,LPMVWYG,LPMVWYH,LPMVWYI,LPMVWYJ',
-              'test' : 'LPMVWXL'}
+              'private_m1' : 'RPMB3NM','LPMB5S9','LPMB6S2','LPMB6S3','LPMZ3TT','LPMZ3TV','LPMZ3TX'}
             
 
 for dt in datatables:
